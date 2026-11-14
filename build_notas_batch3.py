@@ -22,6 +22,7 @@ NOTES = [
         s2="Para quien compra pensando en alquilar, el cambio es relevante: un ratio precio/alquiler más bajo suele indicar que, comparado con los últimos años, los alquileres rinden más en proporción al precio del inmueble. Pero el retorno varía mucho según la zona, así que no todos los distritos ofrecen la misma ventaja.",
         s3_suffix="",
         s3="Si piensas comprar para alquilar, revisa bien la zona y el contrato antes de firmar. Un contrato de arrendamiento formal y registrado te protege si el inquilino deja de pagar, y facilita cualquier proceso de cobro o desalojo si llega a ser necesario.",
+        pull="“Ya no toma tantos años de renta recuperar lo que se pagó por el departamento.”",
         src="Fuente: Banco Central de Reserva del Perú (BCR). Información referencial; no constituye asesoría de inversión.",
     ),
     dict(
@@ -41,6 +42,7 @@ NOTES = [
         s2="El modelo alemán anticipa hacia dónde va la supervisión antilavado en general: menos silos de información y más colaboración entre entidades obligadas, siempre dentro de reglas claras de protección de datos.",
         s3_suffix=" (PLAFT)",
         s3="En el Perú, la SBS y la UIF ya exigen a los sujetos obligados reportar este tipo de operaciones dentro del sistema de Prevención del Lavado de Activos y Financiamiento del Terrorismo (PLAFT). Si tu empresa es sujeto obligado, revisa tu oficial de cumplimiento y tus manuales PLAFT antes de que te caiga una supervisión: no basta con tenerlos, hay que aplicarlos y dejar evidencia de que se aplican.",
+        pull="“Compartir datos entre bancos permite detectar patrones que ningún banco vería solo.”",
         src="Fuente: Reuters. Información referencial; no constituye asesoría legal.",
     ),
 ]

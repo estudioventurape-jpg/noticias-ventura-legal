@@ -24,15 +24,14 @@ h1{font-family:Newsreader,Georgia,serif;font-weight:500;font-size:clamp(30px,6vw
 .stat{background:var(--soft);padding:18px 20px;margin:28px 0;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
 .stat b{font-family:Newsreader,Georgia,serif;font-size:40px;color:var(--dblue);font-weight:500;font-variant-numeric:tabular-nums}
 .stat span{font-size:14px;color:var(--g1);max-width:420px}
-h2.s{font-family:Newsreader,Georgia,serif;font-weight:500;font-size:24px;border-top:2px solid var(--ink);padding-top:10px;margin:34px 0 12px}
-h2.s span{color:var(--blue);margin-right:10px}
 p{color:var(--g1);margin:0 0 14px;max-width:65ch}
 p.lead{color:var(--ink);font-size:16px}
+.pull{float:right;width:42%;margin:6px 0 20px 28px;font-family:Newsreader,Georgia,serif;font-style:italic;font-weight:500;font-size:25px;line-height:1.3;color:var(--dblue);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);padding:16px 0}
 .src{font-size:12.5px;color:var(--g2);border-left:2px solid var(--l1);padding-left:10px;margin:10px 0 0}
 footer{border-top:1px solid var(--l1);margin-top:40px;padding-block:22px 40px;font-size:13px;color:var(--g2)}
 footer .nm{font-family:Newsreader,Georgia,serif;font-size:18px;color:var(--ink)}
 .note{color:var(--g2);font-size:13px;margin-top:4px}
-@media(max-width:640px){.brand small{display:none}}
+@media(max-width:640px){.brand small{display:none}.pull{float:none;width:100%;margin:18px 0}}
 """.strip()
 
 TEMPLATE = """<html lang="es"><head>
@@ -61,7 +60,6 @@ TEMPLATE = """<html lang="es"><head>
 <img class="cover" src="{slug}-portada.jpg" alt="{h1}">
 
 <div class="cta">
-<a class="btn p" href="https://www.tiktok.com/@victorventura.legal" target="_blank" rel="noopener">Ver el video en TikTok</a>
 <a class="btn g" href="https://wa.me/51927995630?text=Hola%20V%C3%ADctor%2C%20quiero%20una%20consulta%20legal" target="_blank" rel="noopener">Escríbeme por WhatsApp</a>
 </div>
 
@@ -69,13 +67,11 @@ TEMPLATE = """<html lang="es"><head>
 
 <p class="lead">{lead}</p>
 
-<h2 class="s"><span>01</span>Qué pasó</h2>
 <p>{s1}</p>
 
-<h2 class="s"><span>02</span>Ángulo Perú</h2>
+<aside class="pull">{pull}</aside>
 <p>{s2}</p>
 
-<h2 class="s"><span>03</span>Ángulo legal{s3_suffix}</h2>
 <p>{s3}</p>
 
 <p class="src">{src}</p>
@@ -107,6 +103,7 @@ NOTES = [
         s2="Las cuentas mula son el eslabón que permite a las bandas de extorsión cobrar sin exponer sus propias cuentas. Golpear ese eslabón es, junto con la persecución penal directa, una de las pocas palancas legales que el Estado tiene para frenar el cobro de extorsiones sin necesidad de capturar primero a toda la organización criminal.",
         s3_suffix=" (PLAFT)",
         s3="Para bancos y billeteras digitales, que son sujetos obligados ante la UIF, la norma eleva la presión para detectar y reportar estos movimientos a tiempo. Y para cualquier persona: si alguien te ofrece dinero fácil por prestar tu cuenta o tu DNI, ya no es solo un tema ético — es un delito con una pena muy alta.",
+        pull="“Prestar una cuenta para que otro cobre un depósito ya no es un favor: es un delito con una pena muy alta.”",
         src="Fuente: Semana Económica. Información referencial; no constituye asesoría legal.",
     ),
     dict(
@@ -126,6 +123,7 @@ NOTES = [
         s2="El caso confirma que incluso bancos grandes y con sistemas de cumplimiento maduros pueden fallar durante años antes de que el regulador actúe, y que las multas por PLAFT pueden ser mucho mayores que el costo de mantener un programa de cumplimiento robusto.",
         s3_suffix=" (PLAFT)",
         s3="En el Perú, la SBS y la UIF exigen lo mismo a los bancos y a las empresas sujetas a PLAFT: conocer bien a sus clientes, vigilar movimientos raros y reportarlos a tiempo. Si tu empresa es sujeto obligado, no basta con tener un manual de prevención en un cajón: hay que aplicarlo, capacitar al personal y guardar la evidencia. Así es como se defiende un oficial de cumplimiento.",
+        pull="“Incluso bancos grandes y con sistemas de cumplimiento maduros pueden fallar durante años antes de que el regulador actúe.”",
         src="Fuente: Reuters. Información referencial; no constituye asesoría legal ni de inversión.",
     ),
     dict(
@@ -145,6 +143,7 @@ NOTES = [
         s2="El caso confirma que el lavado con cripto ya no pasa solo por mezcladores o exchanges opacos: ahora incluye la creación de activos nuevos, diseñados para generar volumen y confundir el origen del dinero en horas.",
         s3_suffix=" (PLAFT)",
         s3="En el Perú, la SBS y la UIF ya piden a los exchanges y a las empresas que operan con criptoactivos que vigilen este tipo de movimientos. Si usas un exchange de criptomonedas, revisa que esté registrado y que reporte operaciones ante la UIF. Y si tu empresa acepta pagos en cripto, esa actividad ya debe estar en tu matriz de riesgo de PLAFT.",
+        pull="“En solo una semana, los atacantes usaron más de veinte mil billeteras digitales distintas para mover los fondos robados.”",
         src="Fuente: Bloomberg. Información referencial; no constituye asesoría legal ni de inversión.",
     ),
 ]

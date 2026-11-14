@@ -23,6 +23,7 @@ NOTES = [
         s2="Con el cambio, la Fiscalía podrá iniciar el proceso de extinción de dominio en paralelo al proceso penal, sin esperar su resultado, sobre inmuebles, vehículos o cuentas vinculados a narcotráfico, lavado de activos, corrupción o minería ilegal. El Ministerio Público mantiene la carga de probar el origen ilícito del bien, y quien compró de buena fe y puede probarlo puede pedir que lo excluyan del proceso.",
         s3_suffix=" (PLAFT)",
         s3="Para empresas y personas con activos de procedencia dudosa, la ventana para regularizar se estrecha: ya no alcanza con que el proceso penal se demore. Para sujetos obligados ante la UIF, la norma es una señal más de que el Estado está afinando sus herramientas de recuperación de activos.",
+        pull="“El Estado ya no tendrá que esperar una sentencia penal firme para recuperar un bien de origen ilícito.”",
         src="Fuentes: Gestión, El Comercio y La República. Información referencial; no constituye asesoría legal.",
     ),
     dict(
@@ -42,6 +43,7 @@ NOTES = [
         s2="En el Perú, la SBS limita los préstamos a empresas vinculadas al 25% del capital de nivel 1, exige que se aprueben antes por el directorio y en condiciones de mercado, y tiene autonomía constitucional frente al Gobierno. Son, justamente, las tres reglas de Basilea que Paraguay no aplicó: control de conflictos de interés, diversificación del riesgo y un supervisor independiente.",
         s3_suffix=" (cumplimiento)",
         s3="Si eres parte de un directorio, de un área de riesgos o de cumplimiento, el caso Ueno es un recordatorio concreto: revisa tus límites de crédito a partes vinculadas, la concentración de tus fuentes de fondeo y qué tan independiente es, en la práctica, quien te supervisa. La tecnología nunca es la excusa.",
+        pull="“El banco Ueno no quebró por ser digital: quebró por fallas clásicas de supervisión.”",
         src="Fuente: columna de Ljubica Vodanovic en Gestión. Información referencial; no constituye asesoría legal.",
     ),
 ]
