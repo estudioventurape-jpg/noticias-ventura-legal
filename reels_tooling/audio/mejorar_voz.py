@@ -4,7 +4,7 @@
 Uso: python3 mejorar_voz.py entrada.m4a salida.m4a [LUFS]
 - Quita ruido de fondo, cierra las pausas con compuerta, copia la ecualización de la referencia
   (menos cuerpo en 350-500 Hz, más presencia en 900-1400 Hz y brillo sobre 4 kHz), comprime fuerte
-  y normaliza al estándar de los reels (-16 LUFS por defecto, pico máximo -1.5 dBFS).
+  y normaliza (con -1 dB de ajuste final, porque la normalización queda ~1 dB alta) al estándar de los reels (-16 LUFS por defecto, pico máximo -1.5 dBFS).
 Requiere ffmpeg. La ecualización es la que se midió en la prueba del 16-11-2026 (intensidad 80 %).
 """
 import subprocess, sys
@@ -31,5 +31,5 @@ if __name__ == "__main__":
     entrada, salida = sys.argv[1], sys.argv[2]
     lufs = float(sys.argv[3]) if len(sys.argv) > 3 else -16.0
     subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", entrada, "-ac", "1", "-ar", "48000",
-                    "-af", cadena(lufs), "-c:a", "aac", "-b:a", "192k", salida], check=True)
+                    "-af", cadena(lufs) + ",volume=-1dB", "-c:a", "aac", "-b:a", "192k", salida], check=True)
     print("listo:", salida)
